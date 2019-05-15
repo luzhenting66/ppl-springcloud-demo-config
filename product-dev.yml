@@ -1,3 +1,9 @@
+spring:
+  profiles:
+    active:
+      - dev
+---
+
 server:
   port: 8002
 spring:
@@ -9,6 +15,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/microservice-product?serverTimezone=GMT%2B8
     username: root
     password: root
+  profiles: dev
 
 #mapper文件配置
 mybatis:
